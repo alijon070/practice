@@ -23,6 +23,6 @@ function countLetter(letter, word) {
     }
 }
 
-const result = countLetter("a", "albert");
+const result = countLetter("a", "Im am using smArtphone");
 
 console.log("countLetter result:", result);
