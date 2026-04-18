@@ -1,0 +1,12 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "Learning GIT and Python Foundation",
+  "main": "train.js",
+  "scripts": {
+    "test": "nodemon train.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
