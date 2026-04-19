@@ -4,7 +4,7 @@ Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkin
 MASALAN countLetter("e", "engineer") 3ni return qiladi.
  */
 
-// Solution
+/* Solution
 function countLetter(letter, word) {
     if (typeof letter !== "string") {
         console.log("enter a letter");
@@ -26,6 +26,7 @@ function countLetter(letter, word) {
 const result = countLetter("a", "albert");
 
 console.log("countLetter result:", result);
+*/
 
 /*
 B-TASK (NodeJS)
@@ -54,7 +55,7 @@ console.log("countDigits:", resultt);
 
 
 
-// ANIMAL CHALLENGE
+/*ANIMAL CHALLENGE
 const animal_list = ["fox", "ant", "bird", "lion", "wolf", "deer", "bear", "frog", "hen", "mole", "duck", "goat", "dog", "cat", "bat", "cock", "cow"];
 
 
@@ -83,5 +84,6 @@ function findAnimals(txt) {
 
 //findAnimals("gdoat");
 //console.log(findAnimals("gdoat"));
+*/
 
 
