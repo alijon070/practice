@@ -46,8 +46,13 @@ function countDigits(a) {
         return filter.length;
     }
 }
+const resultt = countDigits("Ali jon 123445 3 33 423 42 1")
+console.log("countDigits:", resultt);
 
-console.log("countDigits:", countDigits("Ali jon 123445 3 33 423 42 1"));
+
+
+
+
 
 // ANIMAL CHALLENGE
 const animal_list = ["fox", "ant", "bird", "lion", "wolf", "deer", "bear", "frog", "hen", "mole", "duck", "goat", "dog", "cat", "bat", "cock", "cow"];
@@ -77,6 +82,6 @@ function findAnimals(txt) {
 
 
 //findAnimals("gdoat");
-console.log(findAnimals("gdoat"));
+//console.log(findAnimals("gdoat"));
 
 
