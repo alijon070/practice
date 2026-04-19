@@ -6,6 +6,7 @@
 
 print("===== INHERITENCE ")
 # PARENT > CHILD
+# Parent can provide only private and protected properties(states 7 methods) to child
 
 
 class Animal:
@@ -14,7 +15,7 @@ class Animal:
 
     # constructor
     def __init__(self, voice, status):
-        self.__status = "animal is alive"
+        self._status = "animal is alive"
         self.voice = voice
 
     # method
@@ -26,10 +27,10 @@ class Dog(Animal):  # Child
     # state
 
     # constructor
-    def __init__(self, name, sound, voice):
+    def __init__(self, name, sound, voice, status):
         self.name = name
         self.sound = sound
-        super().__init__(voice)
+        super().__init__(voice, status)
     # self.voice = voice
 
     # method
@@ -44,10 +45,10 @@ class Cat(Animal):  # Child
     # state
 
     # constructor
-    def __init__(self, name, sound, voice):
+    def __init__(self, name, sound, voice, status):
         self.name = name
         self.sound = sound
-        super().__init__(voice)
+        super().__init__(voice, status)
 
     # method
     def introduce(self):
@@ -62,10 +63,10 @@ class Fish(Animal):  # Child
     # state
 
     # constructor
-    def __init__(self, name, sound, voice):
+    def __init__(self, name, sound, voice, status):
         self.name = name
         self.sound = sound
-        super().__init__(voice)
+        super().__init__(voice, status)
 
     # method
     def introduce(self):
@@ -75,9 +76,9 @@ class Fish(Animal):  # Child
         print("Yes, I can swim")
 
 
-dog = Dog("Rex", "wow", True)
-cat = Cat("Tom", "myeow", True)
-fish = Fish("Nemo", "Zzz", False)
+dog = Dog("Rex", "wow", True, True)
+cat = Cat("Tom", "myeow", True, True)
+fish = Fish("Nemo", "Zzz", False, True)
 
 dog.introduce()
 cat.introduce()
@@ -92,5 +93,5 @@ print(Animal.description)
 print(dog.description)
 
 print(dog.voice, fish.voice)
-print("status:",  dog.status)
-print("status:",  cat.status)
+print("status:",  dog._status)
+print("status:",  cat._status)
