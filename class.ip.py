@@ -4,12 +4,12 @@
 (3) POLIMORPHISM
 '''
 
-print("===== INHERITENCE ")
+print("===== INHERITENCE ======")
 # PARENT > CHILD
 # Parent can provide only private and protected properties(states 7 methods) to child
 
 
-class Animal:
+class Animal(object):
     # state
     description = 'The class creates animals'
 
@@ -39,6 +39,9 @@ class Dog(Animal):  # Child
 
     def protect(self):
         print("Yes, I can protect you")
+
+    def make_voice(self):
+        print(f"{self.name} says: {self.sound}")
 
 
 class Cat(Animal):  # Child
@@ -95,3 +98,22 @@ print(dog.description)
 print(dog.voice, fish.voice)
 print("status:",  dog._status)
 print("status:",  cat._status)
+
+print("===== POLIMORPHISM ======")
+
+dog.make_voice()
+
+# fish > Fish > Animal > object
+a = isinstance(fish, Fish)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+d = isinstance("MIT", object)
+
+
+result = a and b and c and d
+print(f"result:", result)
+
+# Fish > Animal > object
+data = issubclass(Fish, Animal)
+data2 = issubclass(Animal, object)
+print("data:", data, data2)
