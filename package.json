@@ -5,6 +5,7 @@
   "main": "train.js",
   "scripts": {
     "test": "nodemon train.js"
+    
   },
   "keywords": [],
   "author": "",

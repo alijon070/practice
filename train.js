@@ -1,3 +1,29 @@
+/*
+B-TASK (NodeJS)
+
+Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
+MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
+ */
+
+// Solution
+
+function countDigits(a) {
+    if (a === "") {
+        console.log("Enter the text")
+    } else {
+        const split = a.split("")
+        const filter = split.filter((ele) => !isNaN(ele) && ele !== " ")
+        //return split
+        return filter.length;
+    }
+}
+const resultt = countDigits("Ali jon 123445 3 33 423 42 1")
+console.log("countDigits:", resultt);
+
+
+
+console.log("============")
+
 /*  A-TASK (NodeJS)
 
 Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
@@ -28,27 +54,7 @@ const result = countLetter("a", "albert");
 console.log("countLetter result:", result);
 */
 
-/*
-B-TASK (NodeJS)
 
-Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
-MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
- */
-
-// Solution
-
-function countDigits(a) {
-    if (a === "") {
-        console.log("Enter the text")
-    } else {
-        const split = a.split("")
-        const filter = split.filter((ele) => !isNaN(ele) && ele !== " ")
-        //return split
-        return filter.length;
-    }
-}
-const resultt = countDigits("Ali jon 123445 3 33 423 42 1")
-console.log("countDigits:", resultt);
 
 
 
