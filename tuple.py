@@ -23,9 +23,41 @@ print("before fruits:", fruits)
 fruits[2] = "melon"
 print("after fruits:", fruits)
 
-# tuple
+# we cant mutate tuple
 animals = ("dog", "cat", "fish", "lion")
 tuplr_obj = ("MIT", 100, True, None)
 
 print(animals[0])
-animal[0] = "bird"
+# animal[0] = "bird"
+
+# try avoid this
+people = "Andrew", "John"
+animal = "dog",
+
+
+print("===== Unpacking arguments =====")
+groups = ["MIT", "FLEXY", "DEVEX", "MG"]
+# (x, y, z, a) = groups
+(x, y, *z) = groups
+print(f"the x: {x} and y: {y}")
+print("z:", z)  # list
+
+# *args> tuple
+# DEFINE
+
+
+def calculate(*args):
+    print("*args", args)
+    total = 1
+    for x in args:
+        total *= x
+    print(f"the total value: {total}")
+    return total
+
+
+# CALL
+calculate(1, 7, 2, 3)
+print("-----")
+calculate(0, 2, 300)
+print("-----")
+calculate(5, 7)
