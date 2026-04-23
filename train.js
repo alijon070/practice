@@ -1,5 +1,35 @@
+
+/* D-TASK (NodeJS)
+
+Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
+*/
+const array = [5, 77, 12, 42, 66, 88];
+
+function getHighestIndex(array) {
+    console.log(array)
+    let num = 0;
+    const highest = array.map(ele => {
+        if (ele > num)
+            num = ele
+        //index = array.indexOf(ele)
+    })
+    let index = array.indexOf(num);
+    return index
+}
+
+
+const result = getHighestIndex(array);
+console.log(result)
+
+
+
+
+// console.log("=========================")
+
+
 //ANIMAL CHALLENGE
-const animal_list = ["fox", "ant", "bird", "lion", "wolf", "deer", "bear", "frog", "hen", "mole", "duck", "goat", "dog", "cat", "bat", "cock", "cow"];
+/* const animal_list = ["fox", "ant", "bird", "lion", "wolf", "deer", "bear", "frog", "hen", "mole", "duck", "goat", "dog", "cat", "bat", "cock", "cow"];
 
 
 function findAnimals(txt) {
@@ -13,26 +43,16 @@ function findAnimals(txt) {
             if (b[i].every(ele => split.includes(ele)) && !animal.includes(b[i].join("")))
                 animal.push(b[i].join(""))
         }
-    };
-
-
-
+    }
     return animal
 };
 
 result = findAnimals("ogxdtaf");
 console.log(result)
 
-//for(let i = 0; i < split.length ; i++) {
+*/
 
-//}
-//console.log(split)
-
-
-
-//findAnimals("gdoat");
-//console.log(findAnimals("gdoat"));
-
+//console.log("=========================")
 
 
 
