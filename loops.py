@@ -51,3 +51,9 @@ while True:
         break
     else:
         print("Wrong, Guess again!")
+
+
+for i in range(5):
+    if i == 2:
+        continue
+    print(i)
