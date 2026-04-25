@@ -21,11 +21,11 @@ letters = list("Hello World")
 print(f"the letters: {letters} and size: {len(letters)}")
 
 print("-------")
-fruits = ["apple", "orange", "lemon", "kiwi"]
+fruits = ["apple", "orange", "lemon", "kiwi", "banana"]
 
 a = fruits[0]
 b = fruits[0:2]
-c = fruits[::3]
+c = fruits[::2]
 d = fruits[::-1]
 
 print("a:", a)
@@ -157,3 +157,5 @@ print("----------")
 result_filter = filter(lambda car: car[1] > 80, cars)
 print(f"the result_filter: {result_filter} and type: {type(result_filter)}")
 print(list(result_filter))
+
+print(fruits.reverse())

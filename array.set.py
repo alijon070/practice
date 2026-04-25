@@ -45,7 +45,9 @@ b = {20, 40}
 result1 = a | b  # union
 result2 = a & b  # intersaction
 result3 = a - b  # difference
+result4 = a ^ b  # symmetric difference
 
 print("result1:", result1)
 print("result2:", result2)
 print("result3:", result3)
+print("result4:", result4)
