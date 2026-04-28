@@ -48,3 +48,5 @@ print("dict_people:", dict_people)
 dict_people2 = {person[0]: person[1]
                 for person in people if person[1] > 20}  # c version
 print("dict_people2:", dict_people2)
+
+# (<expression> for item in iterable) generic
