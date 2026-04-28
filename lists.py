@@ -49,7 +49,7 @@ size = len(letters) - 1
 result = letters.pop(size)  # pop behind
 print(f"the pop result: {letters}")
 
-result = letters.pop(0)  # pop front
+result = letters.pop(3)  # pop front
 print(f"the pop result: {letters}")
 
 
@@ -60,8 +60,11 @@ print("animals:", animals)
 animals.remove("lion")
 print("remove:", animals)
 
+print("animals:", animals)
+
+
 del animals[2:3]
-print("remove:", animals)
+print("del:", animals)
 
 exist = animals.index("cat")
 print("exist:", exist)
@@ -88,7 +91,7 @@ print(f"the sorted numbs: {numbs} and new_numbs: {new_numbs}")
 
 print("===== Lambda function =====")
 
-# lambdais small anonymous function
+# lambda is small anonymous function
 
 
 def calculate(x, y): return x * y
@@ -157,5 +160,3 @@ print("----------")
 result_filter = filter(lambda car: car[1] > 80, cars)
 print(f"the result_filter: {result_filter} and type: {type(result_filter)}")
 print(list(result_filter))
-
-print(fruits.reverse())
