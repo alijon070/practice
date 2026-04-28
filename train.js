@@ -1,3 +1,27 @@
+/* F-TASK (NodeJS)
+
+Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+MASALAN: getReverse("hello") return true return qiladi
+
+*/
+
+function findDoublers(txt) {
+    let splitted = txt.split("")
+    console.log(splitted)
+    for (let i =0; i<txt.length; i++){
+        let list = splitted.filter((ele) => ele === txt[i]);
+    if(list.length >= 2){
+            return true
+        }
+    }
+    return false
+}
+
+
+const result = findDoublers("ali")
+console.log("result:", result)
+
+
 /*
 E-TASK (NodeJS)
 
@@ -5,7 +29,7 @@ Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni tes
 MASALAN: getReverse("hello") return qilsin "olleh"
 */
 
-function getReverse(txt) {
+/* function getReverse(txt) {
     result = txt.split('').reverse().join('')
     // reverse = split.reverse();
     // result = reverse.join('')
@@ -14,6 +38,11 @@ function getReverse(txt) {
 
 result = getReverse("Ali")
 console.log(result)
+*/ 
+
+
+
+
 /* D-TASK (NodeJS)
 
 Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
