@@ -1,9 +1,58 @@
+/*
+ H-TASK (NodeJS)
+
+shunday function tuzing, u integerlardan iborat arrayni argument sifatida qabul qilib, faqat positive qiymatlarni olib string holatda return qilsin
+MASALAN: getPositive([1, -4, 2]) return qiladi "12"
+*/
+
+const array = [1, -4, 2];
+
+function getPositive(array) {
+    console.log(array)
+    const string = array.filter(ele => ele>0).join("")
+    return string
+}
+
+
+
+const result = getPositive(array)
+console.log("result:", result)
+
+/*
+G-TASK (PYTHON)
+
+Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+MASALAN: get_highest_index([5, 21, 12, 21, 8]) return qiladi 1 sonini.
+*/
+
+/*
+const array = [5, 88, 12, 42, 66, 88];
+
+function get_highest_index(array) {
+    console.log(array)
+    let num = 0;
+    const highest = array.map(ele => {
+        if (ele > num)
+            num = ele
+        //index = array.indexOf(ele)
+    })
+    let index = array.indexOf(num);
+    return index
+}
+
+
+const result = get_highest_index(array);
+console.log(result)
+*/
+
 /* F-TASK (NodeJS)
 
 Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
 MASALAN: getReverse("hello") return true return qiladi
 
 */
+
+/*
 
 function findDoublers(txt) {
     let splitted = txt.split("")
@@ -21,6 +70,7 @@ function findDoublers(txt) {
 const result = findDoublers("ali")
 console.log("result:", result)
 
+*/
 
 /*
 E-TASK (NodeJS)
