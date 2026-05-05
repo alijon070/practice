@@ -1,23 +1,19 @@
-nums = [1, 2, 4, 6]
+''' I-TASK (PYTHON)
 
-index = nums[-1]
-# print(index)
-num = []
+Shunday function tuzing, unga string argument pass bolsin. Function ushbu agrumentdagi digitlarni yangi stringda return qilsin
+MASALAN: get_digits("m14i1t") return qiladi "141"
+'''
 
-for i in range(nums[0], index+1):
-    num.append(i)
+nums = []
 
-# print(num)
 
-numm = set(num)
-numbs = set(nums)
+def get_digits(a):
+    digit = ""
+    for letter in a:
+        if letter.isdigit():
+            digit += letter
+    return digit
 
-result = numm - numbs
+
+result = get_digits("m14i1t")
 print(result)
-
-
-a = [1, 2, 3, 4]
-b = [2, 3, 5]
-c = [2, 3, 6]
-
-resultt = a & b & c

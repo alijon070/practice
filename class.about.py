@@ -93,3 +93,4 @@ your_car = Car("Toyota", 2026)
 print(your_car)  # look like function
 response = your_car()  # CALL
 print("response:", response)
+Person.explain()
