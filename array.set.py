@@ -39,7 +39,7 @@ print("numbs_set(2):", numbs_set)
 print("===== Specific operators with set =====")
 # | & - ^
 
-a = {10, 20, 50}
+a = {40, 20}
 b = {20, 40}
 
 result1 = a | b  # union

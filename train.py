@@ -1,7 +1,35 @@
+'''M-TASK (PYTHON)
+
+Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham, orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin.
+MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return False;
+'''
+a = "dad"
+
+
+def palindrom_check(a):
+    letter = list(a)
+    # print(letter)
+    reverse = letter[::-1]
+    print(reverse)
+
+    if letter == reverse:
+        return True
+
+    else:
+        return False
+
+
+# palindrom_check(a)
+result = palindrom_check(a)
+print(result)
+
+
 '''L-TASK (NodeJS)
 
 Shunday function yozing, u string qabul qilsin va string ichidagi hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
 MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
+'''
+
 '''
 a = "we like coding!"
 
@@ -16,6 +44,7 @@ def reverseSentence(a):
     for value in c:
         result.append(value[::-1])
         string = " ".join(result)
+        
     return string
 
 
@@ -23,7 +52,7 @@ reverseSentence(a)
 
 result = reverseSentence(a)
 print(result)
-
+'''
 
 '''K-TASK (PYTHON)
 
