@@ -1,11 +1,32 @@
 /*
+N-TASK (NodeJS)
+
+Shunday function yozing, u raqamlardan tashkil topgan array qabul qilsin va array ichidagi har bir raqam uchun raqamni ozi va hamda osha raqamni kvadratidan tashkil topgan object hosil qilib, hosil bolgan objectlarni array ichida qaytarsin.
+MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1}, {number: 2, square: 4}, {number: 3, square: 9}];
+
+ */
+
+const array = [1, 2, 3, 4, 55]
+
+function getSquareNumbers(array) {
+    
+    return array.map((ele) => ({
+        number: ele,
+        square: ele** 2
+    }));
+}
+
+const result = getSquareNumbers(array)
+console.log(result)
+
+/*
 J-TASK (NodeJS)
 
 Shunday function yozing, u parametridagi array ichida eng kop takrorlangan raqamni topib qaytarsin.
 MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
  */
 
-const array = [1,2,2,2,2,3,4,5,5,5,5,5,5,5,55,,4,3,4]
+/* const array = [1,2,2,2,2,3,4,5,5,5,5,5,5,5,55,,4,3,4]
 
 function majorityElement(array) {
     let check = 0;
@@ -28,6 +49,8 @@ return value
 }
 
 console.log(majorityElement(array))
+*/
+
 
 /*
  H-TASK (NodeJS)

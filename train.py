@@ -1,7 +1,27 @@
+'''O-TASK (PYTHON)
+
+Shunday function yozing, u har xil valuelardan iborat array qabul qilsin va List ichidagi sonlar yigindisini hisoblab chiqqan javobni qaytarsin.
+MASALAN: calculate_summary([10, "10", {son: 10}, true, 35]) return 45
+'''
+a = [10, "10", {"son": 10}, True, 35]
+
+
+def calculate_summary(a):
+    result = 0
+
+    for ele in a:
+        if type(ele) == int:
+            result += ele
+    return result
+
+
+natija = calculate_summary(a)
+print(natija)
 '''M-TASK (PYTHON)
 
 Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham, orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin.
 MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return False;
+'''
 '''
 a = "dad"
 
@@ -22,7 +42,7 @@ def palindrom_check(a):
 # palindrom_check(a)
 result = palindrom_check(a)
 print(result)
-
+'''
 
 '''L-TASK (NodeJS)
 
